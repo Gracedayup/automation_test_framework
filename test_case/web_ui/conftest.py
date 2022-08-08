@@ -28,7 +28,7 @@ def driver(request) -> WebElement:
     driver.maximize_window()
     driver.implicitly_wait(GLOBAL_TIMEOUT)
     yield driver
-   # driver.close()
+    driver.close()
 
 
 
