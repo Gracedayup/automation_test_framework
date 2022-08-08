@@ -1,0 +1,19 @@
+logger:
+  level: DEBUG
+server_api:
+  account_base_url: "http://10.1.1.41:8080/jugo-account-api"
+  flow_base_url: "http://10.10.8.177:8234/jugoflow"
+  login_url: "/user/login"
+web_url:
+    flow_login_url: "http://10.10.8.177"
+account:
+  flow_username: admin
+  flow_password: admin123456
+database:
+  host: 10.10.8.177
+  port: 3306
+  username: juzix
+  password: Jzy@123456
+  database: db_jugo_flow
+
+

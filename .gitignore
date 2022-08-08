@@ -1,0 +1,7 @@
+.idea
+*.pyc
+*.log
+*.iml
+/reports
+/temp
+/test
