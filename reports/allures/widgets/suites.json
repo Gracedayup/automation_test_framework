@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"24dbe6f2723aa1352aac8958f323bb2a","name":"test_case.web_ui.login","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}},{"uid":"cb3b12bbe636fbe26ea3e81d5394fbb3","name":"test_case.web_ui.my_account","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Aug 08 14:04:06 CST 2022","Mon Aug 08 14:04:16 CST 2022","10877","test_case.web_ui.login","test_login","TestLogin","","","登录成功","正确的账号密码，成功登录"
+"passed","Mon Aug 08 14:15:13 CST 2022","Mon Aug 08 14:15:22 CST 2022","9276","test_case.web_ui.login","test_login","TestLogin","","","登录成功","正确的账号密码，成功登录"
+"passed","Mon Aug 08 14:15:22 CST 2022","Mon Aug 08 14:15:23 CST 2022","501","test_case.web_ui.my_account","test_node_management","TestNodeManagement","","","我的账户-网络节点管理","点击我的账户-网络节点管理，检查节点列表"

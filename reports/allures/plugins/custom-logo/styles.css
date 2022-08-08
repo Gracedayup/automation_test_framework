@@ -1,0 +1,17 @@
+.side-nav__brand {
+  /* background: url('custom-logo.svg') no-repeat left center !important; */
+  background: url('JUGO.svg') no-repeat left center !important;
+  margin-left: 20px;
+  height: 40px;
+  background-size:contain !important
+}
+
+.side-nav__brand-text{
+  display: none;
+}
+
+.side-nav__brand:after{
+  content: "JUGO";
+  margin-left: 10px;
+
+}

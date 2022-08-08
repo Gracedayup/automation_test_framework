@@ -1,0 +1,4 @@
+INFO     log:basepage.py:36 在点击我的账户图标等待元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div/span/span')存在：
+INFO     log:basepage.py:148 点击我的账户图标在元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div/span/span')中输点击
+INFO     log:basepage.py:36 在点击网络节点管理等待元素('xpath', '/html/body/div[2]/div/div/section/ul/li[1]/span')存在：
+INFO     log:basepage.py:148 点击网络节点管理在元素('xpath', '/html/body/div[2]/div/div/section/ul/li[1]/span')中输点击

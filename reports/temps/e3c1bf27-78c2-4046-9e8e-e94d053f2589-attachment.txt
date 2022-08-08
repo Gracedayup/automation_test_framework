@@ -1,0 +1,11 @@
+INFO     log:basepage.py:36 在首页_点击登录按钮等待元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div')存在：
+INFO     log:basepage.py:148 首页_点击登录按钮在元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div')中输点击
+INFO     log:basepage.py:36 在None等待元素('class name', 'captcha')存在：
+INFO     log:basepage.py:36 在登录页面_输入用户名等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div[1]/input')存在：
+INFO     log:basepage.py:117 登录页面_输入用户名在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div[1]/input')中输入文本：admin
+INFO     log:basepage.py:36 在登录页面_输入密码等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[2]/div/div/input')存在：
+INFO     log:basepage.py:117 登录页面_输入密码在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[2]/div/div/input')中输入文本：admin123456
+INFO     log:basepage.py:36 在登录页面_输入验证码等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[3]/div/div/input')存在：
+INFO     log:basepage.py:117 登录页面_输入验证码在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[3]/div/div/input')中输入文本：9maa
+INFO     log:basepage.py:36 在登录页面_点击登录按钮等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[4]/div/button')存在：
+INFO     log:basepage.py:148 登录页面_点击登录按钮在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[4]/div/button')中输点击

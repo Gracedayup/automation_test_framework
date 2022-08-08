@@ -1,0 +1,50 @@
+INFO     log:basepage.py:36 在首页_点击登录按钮等待元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div')存在：
+INFO     log:basepage.py:148 首页_点击登录按钮在元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div')中输点击
+INFO     log:basepage.py:36 在None等待元素('class name', 'captcha')存在：
+INFO     log:basepage.py:36 在登录页面_输入用户名等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div[1]/input')存在：
+INFO     log:basepage.py:117 登录页面_输入用户名在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div[1]/input')中输入文本：admin
+INFO     log:basepage.py:36 在登录页面_输入密码等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[2]/div/div/input')存在：
+INFO     log:basepage.py:117 登录页面_输入密码在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[2]/div/div/input')中输入文本：admin1234567
+INFO     log:basepage.py:36 在登录页面_输入验证码等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[3]/div/div/input')存在：
+INFO     log:basepage.py:117 登录页面_输入验证码在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[3]/div/div/input')中输入文本：D1j
+INFO     log:basepage.py:36 在登录页面_点击登录按钮等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[4]/div/button')存在：
+INFO     log:basepage.py:148 登录页面_点击登录按钮在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[4]/div/button')中输点击
+INFO     log:basepage.py:67 None查找元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div/span/span')
+ERROR    log:basepage.py:72 查找元素失败！
+Traceback (most recent call last):
+  File "C:\workspace\AutoTestScript\automation_test\base\basepage.py", line 69, in find_element
+    print("find_element的数据类型：{}".format(self.driver.find_element(*loc)))
+  File "C:\Users\sunny\AppData\Local\Programs\Python\Python38\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 857, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\sunny\AppData\Local\Programs\Python\Python38\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 435, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\sunny\AppData\Local\Programs\Python\Python38\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div/span/span"}
+  (Session info: chrome=104.0.5112.80)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x003E6463+2188387]
+	Ordinal0 [0x0037E461+1762401]
+	Ordinal0 [0x00293D78+802168]
+	Ordinal0 [0x002C1880+989312]
+	Ordinal0 [0x002C1B1B+989979]
+	Ordinal0 [0x002EE912+1173778]
+	Ordinal0 [0x002DC824+1099812]
+	Ordinal0 [0x002ECC22+1166370]
+	Ordinal0 [0x002DC5F6+1099254]
+	Ordinal0 [0x002B6BE0+945120]
+	Ordinal0 [0x002B7AD6+948950]
+	GetHandleVerifier [0x006871F2+2712546]
+	GetHandleVerifier [0x0067886D+2652765]
+	GetHandleVerifier [0x0047002A+520730]
+	GetHandleVerifier [0x0046EE06+516086]
+	Ordinal0 [0x0038468B+1787531]
+	Ordinal0 [0x00388E88+1805960]
+	Ordinal0 [0x00388F75+1806197]
+	Ordinal0 [0x00391DF1+1842673]
+	BaseThreadInitThunk [0x762FFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x777B7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x777B7A6E+238]
+
+INFO     log:basepage.py:397 截屏成功，图片路径为:C:\workspace\AutoTestScript\automation_test\images\20220808\20220808140252_None.png
