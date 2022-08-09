@@ -1,0 +1,274 @@
+2022-08-09 11:39:45,569-[INFO]-[msg]:测试 [Lineno]:54 module-handle_log
+2022-08-09 11:39:45,569-[ERROR]-[msg]:测试 [Lineno]:55 module-handle_log
+2022-08-09 11:39:45,570-[CRITICAL]-[msg]:测试 [Lineno]:56 module-handle_log
+2022-08-09 11:52:29,318-[INFO]-[msg]:发送的data:{'password': 'admin123456', 'userName': 'admin', 'verifyCodeKey': '3b8024f0c09c41c3b34952f88180a754', 'verifyCodeValue': '1l5v'} [Lineno]:65 module-get_token
+2022-08-09 11:52:29,870-[INFO]-[msg]:响应结果：{"code":10000,"msg":"成功","data":{"id":1,"userName":"admin","token":"165698945397661F26B253C0C4142A18FFB0DB8020882","walletJson":"{\"address\":\"juc1dqy4nt8x9qzzg92zqazv6ds8q8vk2s7k22ma5k\",\"id\":\"63af7fb8-215b-437a-9308-ccdea7f08011\",\"version\":3,\"crypto\":{\"cipher\":\"aes-128-ctr\",\"ciphertext\":\"8a5dc0ceb747661e36a2f082492e915328027b9a22e87752be1d40cfde65aa93\",\"cipherparams\":{\"iv\":\"bd1e1b0dd70c509c590ed4ae437b896e\"},\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"n\":16384,\"p\":1,\"r\":8,\"salt\":\"75d024d77ce283bbe4421cbb53e689552faaf389da7ebf109488a9775cf1a00d\"},\"mac\":\"f73dec7af3bdd625c1657732e93e323956b5122afc22d9549e775a864c5b3267\"}}"}} [Lineno]:51 module-get_token
+2022-08-09 12:02:28,842-[INFO]-[msg]:接口传入参数：{
+ "password": "admin",
+ "userName": "admin123456",
+ "verifyCodeKey": "a27d5e5fa6be43bbbd0b703ff50703f2",
+ "verifyCodeValue": "bh3r"
+} [Lineno]:32 module-test_login
+2022-08-09 12:02:29,121-[INFO]-[msg]:接口响应：{"code":20009,"msg":"用户名或密码错误"} [Lineno]:37 module-test_login
+2022-08-09 12:02:29,122-[INFO]-[msg]:期望结果：{'check': 'status_code', 'assert': 'equal', 'expect': 200} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:29,122-[INFO]-[msg]:期望结果：{'check': 'code', 'assert': 'equal', 'expect': 20009} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:29,122-[INFO]-[msg]:期望结果：{'check': 'msg', 'assert': 'equal', 'expect': '用户名或密码错误'} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:29,122-[INFO]-[msg]:断言成功 [Lineno]:36 module-handle_requests
+2022-08-09 12:02:29,389-[INFO]-[msg]:接口传入参数：{
+ "password": "admin123456",
+ "userName": "admin1",
+ "verifyCodeKey": "b4fa81de1efd4c18a3fe4480804487d8",
+ "verifyCodeValue": "vr1m"
+} [Lineno]:32 module-test_login
+2022-08-09 12:02:29,553-[INFO]-[msg]:接口响应：{"code":20009,"msg":"用户名或密码错误"} [Lineno]:37 module-test_login
+2022-08-09 12:02:29,553-[INFO]-[msg]:期望结果：{'check': 'status_code', 'assert': 'equal', 'expect': 200} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:29,553-[INFO]-[msg]:期望结果：{'check': 'code', 'assert': 'equal', 'expect': 20009} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:29,553-[INFO]-[msg]:期望结果：{'check': 'msg', 'assert': 'equal', 'expect': '用户名或密码错误'} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:29,553-[INFO]-[msg]:断言成功 [Lineno]:36 module-handle_requests
+2022-08-09 12:02:29,848-[INFO]-[msg]:接口传入参数：{
+ "password": "admin123456",
+ "userName": "admin1",
+ "verifyCodeKey": "12222",
+ "verifyCodeValue": "2222"
+} [Lineno]:32 module-test_login
+2022-08-09 12:02:29,971-[INFO]-[msg]:接口响应：{"code":20009,"msg":"验证码无效"} [Lineno]:37 module-test_login
+2022-08-09 12:02:29,971-[INFO]-[msg]:期望结果：{'check': 'status_code', 'assert': 'equal', 'expect': 200} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:29,971-[INFO]-[msg]:期望结果：{'check': 'code', 'assert': 'equal', 'expect': 20009} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:29,971-[INFO]-[msg]:期望结果：{'check': 'msg', 'assert': 'equal', 'expect': '验证码无效'} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:29,972-[INFO]-[msg]:断言成功 [Lineno]:36 module-handle_requests
+2022-08-09 12:02:30,297-[INFO]-[msg]:接口传入参数：{
+ "password": "admin123456",
+ "userName": "admin",
+ "verifyCodeKey": "75caff3e9af04d10b26930016fbb25ec",
+ "verifyCodeValue": "9gcn"
+} [Lineno]:32 module-test_login
+2022-08-09 12:02:30,794-[INFO]-[msg]:接口响应：{"code":10000,"msg":"成功","data":{"id":1,"userName":"admin","token":"165698945397661F26B253C0C4142A18FFB0DB8020882","walletJson":"{\"address\":\"juc1dqy4nt8x9qzzg92zqazv6ds8q8vk2s7k22ma5k\",\"id\":\"63af7fb8-215b-437a-9308-ccdea7f08011\",\"version\":3,\"crypto\":{\"cipher\":\"aes-128-ctr\",\"ciphertext\":\"8a5dc0ceb747661e36a2f082492e915328027b9a22e87752be1d40cfde65aa93\",\"cipherparams\":{\"iv\":\"bd1e1b0dd70c509c590ed4ae437b896e\"},\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"n\":16384,\"p\":1,\"r\":8,\"salt\":\"75d024d77ce283bbe4421cbb53e689552faaf389da7ebf109488a9775cf1a00d\"},\"mac\":\"f73dec7af3bdd625c1657732e93e323956b5122afc22d9549e775a864c5b3267\"}}"}} [Lineno]:37 module-test_login
+2022-08-09 12:02:30,795-[INFO]-[msg]:期望结果：{'check': 'status_code', 'assert': 'equal', 'expect': 200} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:30,795-[INFO]-[msg]:期望结果：{'check': 'code', 'assert': 'equal', 'expect': 10000} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:30,795-[INFO]-[msg]:期望结果：{'check': 'msg', 'assert': 'equal', 'expect': '成功'} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:30,795-[INFO]-[msg]:断言成功 [Lineno]:36 module-handle_requests
+2022-08-09 12:02:36,949-[INFO]-[msg]:在首页_点击登录按钮等待元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div')存在： [Lineno]:35 module-basepage
+2022-08-09 12:02:36,966-[INFO]-[msg]:首页_点击登录按钮在元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div')中输点击 [Lineno]:147 module-basepage
+2022-08-09 12:02:39,024-[INFO]-[msg]:在None等待元素('class name', 'captcha')存在： [Lineno]:35 module-basepage
+2022-08-09 12:02:39,253-[INFO]-[msg]:在登录页面_输入用户名等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div[1]/input')存在： [Lineno]:35 module-basepage
+2022-08-09 12:02:39,264-[INFO]-[msg]:登录页面_输入用户名在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div[1]/input')中输入文本：admin [Lineno]:116 module-basepage
+2022-08-09 12:02:39,324-[INFO]-[msg]:在登录页面_输入密码等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[2]/div/div/input')存在： [Lineno]:35 module-basepage
+2022-08-09 12:02:39,336-[INFO]-[msg]:登录页面_输入密码在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[2]/div/div/input')中输入文本：admin123456 [Lineno]:116 module-basepage
+2022-08-09 12:02:39,414-[INFO]-[msg]:在登录页面_输入验证码等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[3]/div/div/input')存在： [Lineno]:35 module-basepage
+2022-08-09 12:02:39,425-[INFO]-[msg]:登录页面_输入验证码在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[3]/div/div/input')中输入文本：og5h [Lineno]:116 module-basepage
+2022-08-09 12:02:39,483-[INFO]-[msg]:在登录页面_点击登录按钮等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[4]/div/button')存在： [Lineno]:35 module-basepage
+2022-08-09 12:02:39,494-[INFO]-[msg]:登录页面_点击登录按钮在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[4]/div/button')中输点击 [Lineno]:147 module-basepage
+2022-08-09 12:02:39,541-[INFO]-[msg]:None查找元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div/span/span') [Lineno]:66 module-basepage
+2022-08-09 12:02:59,134-[INFO]-[msg]:接口传入参数：{
+ "password": "admin",
+ "userName": "admin123456",
+ "verifyCodeKey": "323db2247e8a495fb7e6c16de654f5ea",
+ "verifyCodeValue": "2Xkz"
+} [Lineno]:32 module-test_login
+2022-08-09 12:02:59,398-[INFO]-[msg]:接口响应：{"code":20009,"msg":"用户名或密码错误"} [Lineno]:37 module-test_login
+2022-08-09 12:02:59,398-[INFO]-[msg]:期望结果：{'check': 'status_code', 'assert': 'equal', 'expect': 200} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:59,398-[INFO]-[msg]:期望结果：{'check': 'code', 'assert': 'equal', 'expect': 20009} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:59,399-[INFO]-[msg]:期望结果：{'check': 'msg', 'assert': 'equal', 'expect': '用户名或密码错误'} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:59,399-[INFO]-[msg]:断言成功 [Lineno]:36 module-handle_requests
+2022-08-09 12:02:59,709-[INFO]-[msg]:接口传入参数：{
+ "password": "admin123456",
+ "userName": "admin1",
+ "verifyCodeKey": "3270a9cc395a4f309b501377b38b5c67",
+ "verifyCodeValue": "ab2h"
+} [Lineno]:32 module-test_login
+2022-08-09 12:02:59,881-[INFO]-[msg]:接口响应：{"code":20009,"msg":"用户名或密码错误"} [Lineno]:37 module-test_login
+2022-08-09 12:02:59,881-[INFO]-[msg]:期望结果：{'check': 'status_code', 'assert': 'equal', 'expect': 200} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:59,881-[INFO]-[msg]:期望结果：{'check': 'code', 'assert': 'equal', 'expect': 20009} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:59,882-[INFO]-[msg]:期望结果：{'check': 'msg', 'assert': 'equal', 'expect': '用户名或密码错误'} [Lineno]:26 module-handle_requests
+2022-08-09 12:02:59,882-[INFO]-[msg]:断言成功 [Lineno]:36 module-handle_requests
+2022-08-09 12:03:00,186-[INFO]-[msg]:接口传入参数：{
+ "password": "admin123456",
+ "userName": "admin1",
+ "verifyCodeKey": "12222",
+ "verifyCodeValue": "2222"
+} [Lineno]:32 module-test_login
+2022-08-09 12:03:00,358-[INFO]-[msg]:接口响应：{"code":20009,"msg":"验证码无效"} [Lineno]:37 module-test_login
+2022-08-09 12:03:00,358-[INFO]-[msg]:期望结果：{'check': 'status_code', 'assert': 'equal', 'expect': 200} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:00,358-[INFO]-[msg]:期望结果：{'check': 'code', 'assert': 'equal', 'expect': 20009} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:00,359-[INFO]-[msg]:期望结果：{'check': 'msg', 'assert': 'equal', 'expect': '验证码无效'} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:00,359-[INFO]-[msg]:断言成功 [Lineno]:36 module-handle_requests
+2022-08-09 12:03:00,689-[INFO]-[msg]:接口传入参数：{
+ "password": "admin123456",
+ "userName": "admin",
+ "verifyCodeKey": "499199e7098049f0be0f53274f7904ee",
+ "verifyCodeValue": "vh87"
+} [Lineno]:32 module-test_login
+2022-08-09 12:03:00,869-[INFO]-[msg]:接口响应：{"code":20009,"msg":"验证码无效"} [Lineno]:37 module-test_login
+2022-08-09 12:03:00,869-[INFO]-[msg]:期望结果：{'check': 'status_code', 'assert': 'equal', 'expect': 200} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:00,869-[INFO]-[msg]:期望结果：{'check': 'code', 'assert': 'equal', 'expect': 10000} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:00,870-[ERROR]-[msg]:断言失败：code: not equal 10000 [Lineno]:34 module-handle_requests
+2022-08-09 12:03:00,870-[INFO]-[msg]:期望结果：{'check': 'msg', 'assert': 'equal', 'expect': '成功'} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:00,870-[ERROR]-[msg]:断言失败：msg: not equal 成功 [Lineno]:34 module-handle_requests
+2022-08-09 12:03:07,289-[INFO]-[msg]:在首页_点击登录按钮等待元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div')存在： [Lineno]:35 module-basepage
+2022-08-09 12:03:07,307-[INFO]-[msg]:首页_点击登录按钮在元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div')中输点击 [Lineno]:147 module-basepage
+2022-08-09 12:03:09,380-[INFO]-[msg]:在None等待元素('class name', 'captcha')存在： [Lineno]:35 module-basepage
+2022-08-09 12:03:09,560-[INFO]-[msg]:在登录页面_输入用户名等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div[1]/input')存在： [Lineno]:35 module-basepage
+2022-08-09 12:03:09,570-[INFO]-[msg]:登录页面_输入用户名在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div[1]/input')中输入文本：admin [Lineno]:116 module-basepage
+2022-08-09 12:03:09,635-[INFO]-[msg]:在登录页面_输入密码等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[2]/div/div/input')存在： [Lineno]:35 module-basepage
+2022-08-09 12:03:09,648-[INFO]-[msg]:登录页面_输入密码在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[2]/div/div/input')中输入文本：admin123456 [Lineno]:116 module-basepage
+2022-08-09 12:03:09,735-[INFO]-[msg]:在登录页面_输入验证码等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[3]/div/div/input')存在： [Lineno]:35 module-basepage
+2022-08-09 12:03:09,746-[INFO]-[msg]:登录页面_输入验证码在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[3]/div/div/input')中输入文本：UEm [Lineno]:116 module-basepage
+2022-08-09 12:03:09,795-[INFO]-[msg]:在登录页面_点击登录按钮等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[4]/div/button')存在： [Lineno]:35 module-basepage
+2022-08-09 12:03:09,805-[INFO]-[msg]:登录页面_点击登录按钮在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[4]/div/button')中输点击 [Lineno]:147 module-basepage
+2022-08-09 12:03:09,842-[INFO]-[msg]:None查找元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div/span/span') [Lineno]:66 module-basepage
+2022-08-09 12:03:44,625-[INFO]-[msg]:接口传入参数：{
+ "password": "admin",
+ "userName": "admin123456",
+ "verifyCodeKey": "8aba08aa93bb4b47b387e4891426e6e7",
+ "verifyCodeValue": "tE4C"
+} [Lineno]:32 module-test_login
+2022-08-09 12:03:44,873-[INFO]-[msg]:接口响应：{"code":20009,"msg":"验证码无效"} [Lineno]:37 module-test_login
+2022-08-09 12:03:44,874-[INFO]-[msg]:期望结果：{'check': 'status_code', 'assert': 'equal', 'expect': 200} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:44,874-[INFO]-[msg]:期望结果：{'check': 'code', 'assert': 'equal', 'expect': 20009} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:44,874-[INFO]-[msg]:期望结果：{'check': 'msg', 'assert': 'equal', 'expect': '用户名或密码错误'} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:44,874-[ERROR]-[msg]:断言失败：msg: not equal 用户名或密码错误 [Lineno]:34 module-handle_requests
+2022-08-09 12:03:45,544-[INFO]-[msg]:接口传入参数：{
+ "password": "admin123456",
+ "userName": "admin1",
+ "verifyCodeKey": "181251a8868e4e4f9facdbb180423266",
+ "verifyCodeValue": "Azz"
+} [Lineno]:32 module-test_login
+2022-08-09 12:03:45,704-[INFO]-[msg]:接口响应：{"code":20009,"msg":"验证码无效"} [Lineno]:37 module-test_login
+2022-08-09 12:03:45,704-[INFO]-[msg]:期望结果：{'check': 'status_code', 'assert': 'equal', 'expect': 200} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:45,705-[INFO]-[msg]:期望结果：{'check': 'code', 'assert': 'equal', 'expect': 20009} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:45,705-[INFO]-[msg]:期望结果：{'check': 'msg', 'assert': 'equal', 'expect': '用户名或密码错误'} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:45,705-[ERROR]-[msg]:断言失败：msg: not equal 用户名或密码错误 [Lineno]:34 module-handle_requests
+2022-08-09 12:03:46,016-[INFO]-[msg]:接口传入参数：{
+ "password": "admin123456",
+ "userName": "admin1",
+ "verifyCodeKey": "12222",
+ "verifyCodeValue": "2222"
+} [Lineno]:32 module-test_login
+2022-08-09 12:03:46,186-[INFO]-[msg]:接口响应：{"code":20009,"msg":"验证码无效"} [Lineno]:37 module-test_login
+2022-08-09 12:03:46,187-[INFO]-[msg]:期望结果：{'check': 'status_code', 'assert': 'equal', 'expect': 200} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:46,187-[INFO]-[msg]:期望结果：{'check': 'code', 'assert': 'equal', 'expect': 20009} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:46,187-[INFO]-[msg]:期望结果：{'check': 'msg', 'assert': 'equal', 'expect': '验证码无效'} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:46,187-[INFO]-[msg]:断言成功 [Lineno]:36 module-handle_requests
+2022-08-09 12:03:46,544-[INFO]-[msg]:接口传入参数：{
+ "password": "admin123456",
+ "userName": "admin",
+ "verifyCodeKey": "adc9781360154701b3834439e2458320",
+ "verifyCodeValue": "n77j"
+} [Lineno]:32 module-test_login
+2022-08-09 12:03:46,926-[INFO]-[msg]:接口响应：{"code":10000,"msg":"成功","data":{"id":1,"userName":"admin","token":"165698945397661F26B253C0C4142A18FFB0DB8020882","walletJson":"{\"address\":\"juc1dqy4nt8x9qzzg92zqazv6ds8q8vk2s7k22ma5k\",\"id\":\"63af7fb8-215b-437a-9308-ccdea7f08011\",\"version\":3,\"crypto\":{\"cipher\":\"aes-128-ctr\",\"ciphertext\":\"8a5dc0ceb747661e36a2f082492e915328027b9a22e87752be1d40cfde65aa93\",\"cipherparams\":{\"iv\":\"bd1e1b0dd70c509c590ed4ae437b896e\"},\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"n\":16384,\"p\":1,\"r\":8,\"salt\":\"75d024d77ce283bbe4421cbb53e689552faaf389da7ebf109488a9775cf1a00d\"},\"mac\":\"f73dec7af3bdd625c1657732e93e323956b5122afc22d9549e775a864c5b3267\"}}"}} [Lineno]:37 module-test_login
+2022-08-09 12:03:46,927-[INFO]-[msg]:期望结果：{'check': 'status_code', 'assert': 'equal', 'expect': 200} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:46,927-[INFO]-[msg]:期望结果：{'check': 'code', 'assert': 'equal', 'expect': 10000} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:46,927-[INFO]-[msg]:期望结果：{'check': 'msg', 'assert': 'equal', 'expect': '成功'} [Lineno]:26 module-handle_requests
+2022-08-09 12:03:46,927-[INFO]-[msg]:断言成功 [Lineno]:36 module-handle_requests
+2022-08-09 12:03:52,270-[INFO]-[msg]:在首页_点击登录按钮等待元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div')存在： [Lineno]:35 module-basepage
+2022-08-09 12:03:52,290-[INFO]-[msg]:首页_点击登录按钮在元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div')中输点击 [Lineno]:147 module-basepage
+2022-08-09 12:03:54,342-[INFO]-[msg]:在None等待元素('class name', 'captcha')存在： [Lineno]:35 module-basepage
+2022-08-09 12:03:54,520-[INFO]-[msg]:在登录页面_输入用户名等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div[1]/input')存在： [Lineno]:35 module-basepage
+2022-08-09 12:03:54,530-[INFO]-[msg]:登录页面_输入用户名在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div[1]/input')中输入文本：admin [Lineno]:116 module-basepage
+2022-08-09 12:03:54,594-[INFO]-[msg]:在登录页面_输入密码等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[2]/div/div/input')存在： [Lineno]:35 module-basepage
+2022-08-09 12:03:54,605-[INFO]-[msg]:登录页面_输入密码在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[2]/div/div/input')中输入文本：admin123456 [Lineno]:116 module-basepage
+2022-08-09 12:03:54,684-[INFO]-[msg]:在登录页面_输入验证码等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[3]/div/div/input')存在： [Lineno]:35 module-basepage
+2022-08-09 12:03:54,696-[INFO]-[msg]:登录页面_输入验证码在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[3]/div/div/input')中输入文本：b91f [Lineno]:116 module-basepage
+2022-08-09 12:03:54,748-[INFO]-[msg]:在登录页面_点击登录按钮等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[4]/div/button')存在： [Lineno]:35 module-basepage
+2022-08-09 12:03:54,759-[INFO]-[msg]:登录页面_点击登录按钮在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[4]/div/button')中输点击 [Lineno]:147 module-basepage
+2022-08-09 12:03:54,799-[INFO]-[msg]:None查找元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div/span/span') [Lineno]:66 module-basepage
+2022-08-09 12:04:24,804-[ERROR]-[msg]:查找元素失败！ [Lineno]:71 module-basepage
+Traceback (most recent call last):
+  File "C:\workspace\AutoTestScript\automation_test_framework\base\basepage.py", line 68, in find_element
+    print("find_element的数据类型：{}".format(self.driver.find_element(*loc)))
+  File "C:\Users\sunny\AppData\Local\Programs\Python\Python38\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 857, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\sunny\AppData\Local\Programs\Python\Python38\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 435, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\sunny\AppData\Local\Programs\Python\Python38\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div/span/span"}
+  (Session info: chrome=104.0.5112.80)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x003E6463+2188387]
+	Ordinal0 [0x0037E461+1762401]
+	Ordinal0 [0x00293D78+802168]
+	Ordinal0 [0x002C1880+989312]
+	Ordinal0 [0x002C1B1B+989979]
+	Ordinal0 [0x002EE912+1173778]
+	Ordinal0 [0x002DC824+1099812]
+	Ordinal0 [0x002ECC22+1166370]
+	Ordinal0 [0x002DC5F6+1099254]
+	Ordinal0 [0x002B6BE0+945120]
+	Ordinal0 [0x002B7AD6+948950]
+	GetHandleVerifier [0x006871F2+2712546]
+	GetHandleVerifier [0x0067886D+2652765]
+	GetHandleVerifier [0x0047002A+520730]
+	GetHandleVerifier [0x0046EE06+516086]
+	Ordinal0 [0x0038468B+1787531]
+	Ordinal0 [0x00388E88+1805960]
+	Ordinal0 [0x00388F75+1806197]
+	Ordinal0 [0x00391DF1+1842673]
+	BaseThreadInitThunk [0x762FFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x777B7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x777B7A6E+238]
+
+2022-08-09 12:04:25,239-[INFO]-[msg]:截屏成功，图片路径为:C:\workspace\AutoTestScript\automation_test_framework\images\20220809\20220809120424_None.png [Lineno]:396 module-basepage
+2022-08-09 12:05:38,604-[INFO]-[msg]:在首页_点击登录按钮等待元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div')存在： [Lineno]:35 module-basepage
+2022-08-09 12:05:38,621-[INFO]-[msg]:首页_点击登录按钮在元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div')中输点击 [Lineno]:147 module-basepage
+2022-08-09 12:05:40,660-[INFO]-[msg]:在None等待元素('class name', 'captcha')存在： [Lineno]:35 module-basepage
+2022-08-09 12:05:40,899-[INFO]-[msg]:在登录页面_输入用户名等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div[1]/input')存在： [Lineno]:35 module-basepage
+2022-08-09 12:05:40,913-[INFO]-[msg]:登录页面_输入用户名在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div[1]/input')中输入文本：admin [Lineno]:116 module-basepage
+2022-08-09 12:05:40,992-[INFO]-[msg]:在登录页面_输入密码等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[2]/div/div/input')存在： [Lineno]:35 module-basepage
+2022-08-09 12:05:41,005-[INFO]-[msg]:登录页面_输入密码在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[2]/div/div/input')中输入文本：admin123456 [Lineno]:116 module-basepage
+2022-08-09 12:05:41,100-[INFO]-[msg]:在登录页面_输入验证码等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[3]/div/div/input')存在： [Lineno]:35 module-basepage
+2022-08-09 12:05:41,112-[INFO]-[msg]:登录页面_输入验证码在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[3]/div/div/input')中输入文本：gSzi [Lineno]:116 module-basepage
+2022-08-09 12:05:41,184-[INFO]-[msg]:在登录页面_点击登录按钮等待元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[4]/div/button')存在： [Lineno]:35 module-basepage
+2022-08-09 12:05:41,197-[INFO]-[msg]:登录页面_点击登录按钮在元素('xpath', '//*[@id="app"]/div/div/div[2]/div/form/div[4]/div/button')中输点击 [Lineno]:147 module-basepage
+2022-08-09 12:05:41,241-[INFO]-[msg]:None查找元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div/span/span') [Lineno]:66 module-basepage
+2022-08-09 12:05:41,732-[INFO]-[msg]:在点击我的账户图标等待元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div/span/span')存在： [Lineno]:35 module-basepage
+2022-08-09 12:05:41,742-[INFO]-[msg]:点击我的账户图标在元素('xpath', '//*[@id="dataExchange"]/div/div[1]/div[1]/div[3]/div/span/span')中输点击 [Lineno]:147 module-basepage
+2022-08-09 12:05:41,861-[INFO]-[msg]:在点击网络节点管理等待元素('xpath', '/html/body/div[2]/div/div/section/ul/li[1]/span')存在： [Lineno]:35 module-basepage
+2022-08-09 12:05:41,888-[INFO]-[msg]:点击网络节点管理在元素('xpath', '/html/body/div[2]/div/div/section/ul/li[1]/span')中输点击 [Lineno]:147 module-basepage
+2022-08-09 12:05:42,051-[INFO]-[msg]:在网络节点管理列表_检查[添加按钮]文本检查元素('css selector', '.el-button.el-button--primary.el-button--mini')的文本内容 [Lineno]:411 module-basepage
+2022-08-09 12:05:42,052-[INFO]-[msg]:在None等待元素('css selector', '.el-button.el-button--primary.el-button--mini')的文本内容存在 [Lineno]:432 module-basepage
+2022-08-09 12:05:42,688-[INFO]-[msg]:接口传入参数：{
+ "password": "admin",
+ "userName": "admin123456",
+ "verifyCodeKey": "dfa5915fc0c049c78361a6882a249356",
+ "verifyCodeValue": "vW0c"
+} [Lineno]:32 module-test_login
+2022-08-09 12:05:42,947-[INFO]-[msg]:接口响应：{"code":20009,"msg":"用户名或密码错误"} [Lineno]:37 module-test_login
+2022-08-09 12:05:42,947-[INFO]-[msg]:期望结果：{'check': 'status_code', 'assert': 'equal', 'expect': 200} [Lineno]:26 module-handle_requests
+2022-08-09 12:05:42,948-[INFO]-[msg]:期望结果：{'check': 'code', 'assert': 'equal', 'expect': 20009} [Lineno]:26 module-handle_requests
+2022-08-09 12:05:42,948-[INFO]-[msg]:期望结果：{'check': 'msg', 'assert': 'equal', 'expect': '用户名或密码错误'} [Lineno]:26 module-handle_requests
+2022-08-09 12:05:42,948-[INFO]-[msg]:断言成功 [Lineno]:36 module-handle_requests
+2022-08-09 12:05:43,307-[INFO]-[msg]:接口传入参数：{
+ "password": "admin123456",
+ "userName": "admin1",
+ "verifyCodeKey": "e45111d3694a4bdc939c2684dbc15a35",
+ "verifyCodeValue": "ity"
+} [Lineno]:32 module-test_login
+2022-08-09 12:05:43,488-[INFO]-[msg]:接口响应：{"code":20009,"msg":"验证码无效"} [Lineno]:37 module-test_login
+2022-08-09 12:05:43,489-[INFO]-[msg]:期望结果：{'check': 'status_code', 'assert': 'equal', 'expect': 200} [Lineno]:26 module-handle_requests
+2022-08-09 12:05:43,489-[INFO]-[msg]:期望结果：{'check': 'code', 'assert': 'equal', 'expect': 20009} [Lineno]:26 module-handle_requests
+2022-08-09 12:05:43,489-[INFO]-[msg]:期望结果：{'check': 'msg', 'assert': 'equal', 'expect': '用户名或密码错误'} [Lineno]:26 module-handle_requests
+2022-08-09 12:05:43,489-[ERROR]-[msg]:断言失败：msg: not equal 用户名或密码错误 [Lineno]:34 module-handle_requests
+2022-08-09 12:05:44,490-[INFO]-[msg]:接口传入参数：{
+ "password": "admin123456",
+ "userName": "admin1",
+ "verifyCodeKey": "12222",
+ "verifyCodeValue": "2222"
+} [Lineno]:32 module-test_login
+2022-08-09 12:05:44,677-[INFO]-[msg]:接口响应：{"code":20009,"msg":"验证码无效"} [Lineno]:37 module-test_login
+2022-08-09 12:05:44,677-[INFO]-[msg]:期望结果：{'check': 'status_code', 'assert': 'equal', 'expect': 200} [Lineno]:26 module-handle_requests
+2022-08-09 12:05:44,677-[INFO]-[msg]:期望结果：{'check': 'code', 'assert': 'equal', 'expect': 20009} [Lineno]:26 module-handle_requests
+2022-08-09 12:05:44,678-[INFO]-[msg]:期望结果：{'check': 'msg', 'assert': 'equal', 'expect': '验证码无效'} [Lineno]:26 module-handle_requests
+2022-08-09 12:05:44,678-[INFO]-[msg]:断言成功 [Lineno]:36 module-handle_requests
+2022-08-09 12:05:45,138-[INFO]-[msg]:接口传入参数：{
+ "password": "admin123456",
+ "userName": "admin",
+ "verifyCodeKey": "48280fb233af4024aa0798cc452d874d",
+ "verifyCodeValue": "69b3"
+} [Lineno]:32 module-test_login
+2022-08-09 12:05:45,549-[INFO]-[msg]:接口响应：{"code":10000,"msg":"成功","data":{"id":1,"userName":"admin","token":"165698945397661F26B253C0C4142A18FFB0DB8020882","walletJson":"{\"address\":\"juc1dqy4nt8x9qzzg92zqazv6ds8q8vk2s7k22ma5k\",\"id\":\"63af7fb8-215b-437a-9308-ccdea7f08011\",\"version\":3,\"crypto\":{\"cipher\":\"aes-128-ctr\",\"ciphertext\":\"8a5dc0ceb747661e36a2f082492e915328027b9a22e87752be1d40cfde65aa93\",\"cipherparams\":{\"iv\":\"bd1e1b0dd70c509c590ed4ae437b896e\"},\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"n\":16384,\"p\":1,\"r\":8,\"salt\":\"75d024d77ce283bbe4421cbb53e689552faaf389da7ebf109488a9775cf1a00d\"},\"mac\":\"f73dec7af3bdd625c1657732e93e323956b5122afc22d9549e775a864c5b3267\"}}"}} [Lineno]:37 module-test_login
+2022-08-09 12:05:45,549-[INFO]-[msg]:期望结果：{'check': 'status_code', 'assert': 'equal', 'expect': 200} [Lineno]:26 module-handle_requests
+2022-08-09 12:05:45,550-[INFO]-[msg]:期望结果：{'check': 'code', 'assert': 'equal', 'expect': 10000} [Lineno]:26 module-handle_requests
+2022-08-09 12:05:45,550-[INFO]-[msg]:期望结果：{'check': 'msg', 'assert': 'equal', 'expect': '成功'} [Lineno]:26 module-handle_requests
+2022-08-09 12:05:45,550-[INFO]-[msg]:断言成功 [Lineno]:36 module-handle_requests
