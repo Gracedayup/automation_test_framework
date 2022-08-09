@@ -11,10 +11,9 @@ from selenium.common import WebDriverException
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
 
-from common.project_path import project_path
+from common.project_path import image_path
 from common.handle_log import logger
-from setting import IMAGE_DIR, GLOBAL_TIMEOUT, FREQUENCY
-
+from setting import GLOBAL_TIMEOUT, FREQUENCY
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver import ActionChains
@@ -388,10 +387,10 @@ class BasePage(object):
         :param mark:功能标注
         """
         current_time = str(time.strftime("%Y%m%d%H%M%S"))
-        image_dir = os.path.join((os.path.join(project_path, "images")), str(time.strftime("%Y%m%d")))
+        image_dir = os.path.join(image_path, str(time.strftime("%Y%m%d")))
         if not os.path.exists(image_dir):
             os.makedirs(image_dir)
-        img_path = os.path.join(image_dir, '{}_{}.png'.format(current_time,mark))
+        img_path = os.path.join(image_dir, '{}_{}.png'.format(current_time, mark))
         try:
             self.driver.save_screenshot(img_path)
             logger.info("截屏成功，图片路径为:{}".format(img_path))

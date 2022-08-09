@@ -6,7 +6,7 @@ import json
 import time
 from common.handle_requests import HandleRequest
 from common.handle_data import HandleFileData
-from common.project_path import project_path
+from common.project_path import image_path, config_path
 from utils.image_convert_text import ImageConvertText
 from common.handle_log import logger
 
@@ -14,7 +14,7 @@ from common.handle_log import logger
 class GetToken(object):
     def __init__(self):
         self.request = HandleRequest()
-        self.filedata = HandleFileData(f"config/config.yml").read_yaml()
+        self.filedata = HandleFileData(config_path).read_yaml()
         self.url = self.filedata["server_api"]["flow_base_url"]
         self.login_url = self.url + self.filedata["server_api"]["login_url"]
         self.headers = {'Content-Type': 'application/json;charset=UTF-8'}
@@ -84,10 +84,9 @@ class GetToken(object):
         :return:图片文件
         """
         convert_filename = "verifycode.jpg"
-        verifycode_file = os.path.join(project_path, "images")
-        image_url = os.path.join(verifycode_file, convert_filename)
-        if not os.path.exists(verifycode_file):
-            os.mkdir(verifycode_file)
+        image_url = os.path.join(image_path, convert_filename)
+        if not os.path.exists(image_path):
+            os.mkdir(image_path)
         with open(file=image_url, mode="wb") as f:
             f.write(base64.b64decode(image_base64))
         self.text = ImageConvertText().image_convert_text(image_url)
@@ -96,6 +95,7 @@ class GetToken(object):
 
 if __name__ == '__main__':
     token = GetToken()
+    print(token.get_token())
     print(token.filedata)
     print(token.login_url)
 

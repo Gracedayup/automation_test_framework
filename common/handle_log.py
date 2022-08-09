@@ -1,6 +1,7 @@
 import logging
 from common import project_path
 from common.handle_data import HandleFileData
+from common.project_path import config_path
 import datetime
 import os
 
@@ -10,7 +11,7 @@ class HandleLog(object):
         date = datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d')
         self.log_file_name = os.path.join(project_path.logs_path, ''.join([date, '.log']))
         self.log_formatter = "%(asctime)s-[%(levelname)s]-[msg]:%(message)s [Lineno]:%(lineno)d module-%(module)s"
-        self.log_level = HandleFileData("config\config.yml").read_yaml()["logger"]["level"]
+        self.log_level = HandleFileData(config_path).read_yaml()["logger"]["level"]
 
     def handle_log(self):
         logger = logging.getLogger("log")

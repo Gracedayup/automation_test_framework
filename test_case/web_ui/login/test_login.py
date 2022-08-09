@@ -10,15 +10,16 @@ import pytest
 from page_objects.login_page import LoginPage
 from common.handle_data import HandleFileData
 import test_data.web_ui.login_data as test_data
+from common.project_path import config_path
 
-filedata = HandleFileData(f"config/config.yml").read_yaml()
-flow_login_url = filedata["web_url"]["flow_login_url"]
+
+flow_login_url = HandleFileData(config_path).read_yaml()["web_url"]["flow_login_url"]
 
 
 @allure.epic("项目名称：JugoFlow WEB自动化测试项目")
 @allure.feature("模块名称：用户管理")
 class TestLogin:
-    @pytest.mark.run(order=2)
+    @pytest.mark.run(order=1)
     @pytest.mark.dependency(name='testUserLogin')
     @allure.title("登录成功")
     @allure.description("正确的账号密码，成功登录")

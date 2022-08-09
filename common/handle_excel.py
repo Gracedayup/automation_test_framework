@@ -19,8 +19,8 @@ class HandleExcel(object):
         """
 
         logger.debug(f"初始化HandleExcel类的{self.__init__.__name__}方法")
-        self.excle_dir = project_path.testData_dir
-        self.file_dir = os.path.join(self.excle_dir, file_name)
+        self.excel_dir = project_path.testData_dir
+        self.file_dir = os.path.join(self.excel_dir, file_name)
         self.file_name = self.file_dir
         self.sheet_name = sheet_name
         logger.debug(f"参数filename:{self.file_dir},sheet_name:{sheet_name}")

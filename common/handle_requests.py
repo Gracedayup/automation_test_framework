@@ -2,9 +2,8 @@
 
 from common.handle_log import logger
 import requests
-import json
-import jsonpath
 from common.handle_data import HandleFileData
+from common.project_path import config_path
 
 
 class HandleRequest(object):
@@ -40,7 +39,7 @@ class HandleRequest(object):
 
 
 if __name__ == '__main__':
-    base_url = HandleFileData(r"config\config.yml").read_yaml()['server']['flow_base_url']
+    base_url = HandleFileData(config_path).read_yaml()['server']['flow_base_url']
     request = HandleRequest()
     respect = {'status': '10000', 'size': 10, 'msg': '成功'}
     url = base_url + "/org/listOrgInfoByTotalData"

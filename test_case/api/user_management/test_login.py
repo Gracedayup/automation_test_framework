@@ -2,6 +2,7 @@
 
 
 from common.handle_data import HandleFileData
+from common.project_path import login_test_data_path
 from common.handle_log import logger
 from base.get_token import GetToken
 import pytest
@@ -15,9 +16,9 @@ header = {'Content-Type': 'application/json'}
 @allure.epic("项目名称：JugoFlow API自动化测试项目")
 @allure.feature("模块名称：用户管理")
 class TestUserManagement(object):
-    @pytest.mark.run(order=1)
+    @pytest.mark.run(order=3)
     @allure.story("用户登录")
-    @pytest.mark.parametrize("caseinfo", HandleFileData(r"test_data\api\user_management\login_test_data.csv").read_csv())
+    @pytest.mark.parametrize("caseinfo", HandleFileData(login_test_data_path).read_csv())
     def test_login_flow(self, caseinfo, get_base_info):
         allure.dynamic.title(caseinfo["case_no"] + caseinfo["case_name"])
         allure.dynamic.description(caseinfo["case_name"])

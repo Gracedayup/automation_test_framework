@@ -4,6 +4,7 @@ from common.handle_requests import HandleRequest
 from common.handle_data import HandleFileData
 from base.get_token import GetToken
 from db.operation_mysql import OperationMysql
+from common.project_path import config_path
 
 
 @pytest.fixture(scope="session", autouse=False)
@@ -14,7 +15,7 @@ def get_token():
 
 @pytest.fixture(scope="session", autouse=False)
 def get_base_info():
-    base_url = HandleFileData(r"config\config.yml").read_yaml()['server_api']['flow_base_url']
+    base_url = HandleFileData(config_path).read_yaml()['server_api']['flow_base_url']
     request = HandleRequest()
     return base_url, request
 
@@ -22,8 +23,7 @@ def get_base_info():
 @pytest.fixture(scope="session", autouse=False)
 def handle_mysql():
     print("初始化mysql数据库连接")
-    config_data = HandleFileData("config\config.yml").read_yaml()
-    mysql_info = config_data["database"]
+    mysql_info = HandleFileData(config_path).read_yaml()['database']
     db = OperationMysql(host=mysql_info["host"],
                         port=mysql_info["port"],
                         user=mysql_info["username"],
